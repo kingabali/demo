@@ -1,29 +1,15 @@
-# README #
+#API 1
 
-This README would normally document whatever steps are necessary to get your application up and running.
+http://localhost:8080/Test/getEmployeeViaJPA
 
-### What is this repository for? ###
+#API 2
+http://localhost:8080/Test/getEmployeeViaNative
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+Output:
+{"ABC":2,"BCD":1}
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+SQL DATA
+INSERT INTO sys.test_employee (`id`,`te_age`,`te_dept`,`te_name`) VALUES (1,10,'ABC','SS');
+INSERT INTO sys.test_employee (`id`,`te_age`,`te_dept`,`te_name`) VALUES (2,20,'BCD','AS');
+INSERT INTO sys.test_employee (`id`,`te_age`,`te_dept`,`te_name`) VALUES (4,20,'ABC','OO');
